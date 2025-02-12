@@ -69,10 +69,21 @@
                       <input
                         class="control-input"
                         type="checkbox"
-                        name="Бассейн"
+                        name="parking"
                         checked
                       />
+                      Парковка
+                    </label>
+                  </li>
 
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="pool"
+                        checked
+                      />
                       Бассейн
                     </label>
                   </li>
@@ -81,9 +92,8 @@
                       <input
                         class="control-input"
                         type="checkbox"
-                        name="Wi-Fi"
+                        name="wifi"
                       />
-
                       Wi-Fi
                     </label>
                   </li>
@@ -127,13 +137,26 @@
                         type="radio"
                         name="type-of-housing"
                         value="apartments"
-                        checked
                       />
 
                       Апартаменты
                     </label>
                   </li>
                 </ul>
+              </fieldset>
+
+              <fieldset class="filter">
+                <legend class="filter-title">Стоимость, &#8381;</legend>
+                <div class="price-controls">
+                  <label class="min-cost">
+                    <input type="number" name="min-cost" value="0" />
+                    от
+                  </label>
+                  <label class="max-cost">
+                    <input type="number" name="max-cost" value="9000" />
+                    до
+                  </label>
+                </div>
               </fieldset>
 
               <button class="button-current" type="submit">Применить</button>
@@ -145,8 +168,8 @@
         <section>
           <p>НАЙДЕНО ГОСТИНИЦ: 38</p>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
+            <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
 
@@ -171,13 +194,16 @@
             <p class="hotel-card-price">От 4000 ₽</p>
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-            <img class="hotel-card-rating" src="#" alt="" />
-            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 8,5</a>
+            <img
+              class="hotel-card-rating"
+              src="#"
+              alt="Зведное небо в расщелине гор"
+            />
+            <p class="hotel-card-button button">РЕЙТИНГ: 8,5</p>
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="#" alt="" />
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-card-type">Гостиница</p>
@@ -185,12 +211,16 @@
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
             <img class="hotel-card-rating" src="#" alt="" />
-            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 9,2</a>
+            <p class="hotel-card-button button">РЕЙТИНГ: 9,2</p>
+            <img
+              class="hotel-card-image"
+              src="#"
+              alt="Радуга над горным хребтом"
+            />
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="#" alt="" />
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <p class="hotel-card-type">Гостиница</p>
@@ -198,12 +228,13 @@
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
             <img class="hotel-card-rating" src="#" alt="" />
-            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 6,9</a>
+            <p class="hotel-card-button button">РЕЙТИНГ: 6,9</p>
+            <img class="hotel-card-image" src="#" alt="Гора на фоне голубого
+            неба"
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="#" alt="" />
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p class="hotel-card-type">Гостиница</p>
@@ -211,7 +242,9 @@
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
             <img class="hotel-card-rating" src="#" alt="" />
-            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 5,0</a>
+            <p class="hotel-card-button button">РЕЙТИНГ: 5,0</p>
+            <img class="hotel-card-image" src="#" alt="Гора на фоне звездного
+            неба"
           </li>
         </ul>
 
