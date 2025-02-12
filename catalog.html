@@ -5,7 +5,7 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,7 +42,7 @@
           </li>
         </ul>
       </nav>
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <img class="inner-pic" src="#" alt="Размытый пейзаж Седоны" />
@@ -54,7 +54,7 @@
               <a class="breadcrumbs-link">Гостиницы Седоны</a>
             </li>
           </ul>
-          <section class="catalog-houseroom">
+          <section class="catalog-houseroom" data-test="filter">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form
               class="catalog-filter"
@@ -161,61 +161,61 @@
           </a>
         </section>
 
-        <ul class="hotel-list"></ul>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p class="hotel-card-type">Гостиница</p>
-          <p class="hotel-card-price">От 4000 ₽</p>
-          <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-          <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-          <img class="hotel-card-rating" src="#" alt="">
-          <a class="hotel-card-button button" href="#">РЕЙТИНГ: 8,5</a>
-        </li>
+        <ul class="hotel-catalog" data-test="catalog">
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="#" alt="" />
+              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="hotel-card-type">Гостиница</p>
+            <p class="hotel-card-price">От 4000 ₽</p>
+            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
+            <img class="hotel-card-rating" src="#" alt="" />
+            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 8,5</a>
+          </li>
 
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <p class="hotel-card-type">Гостиница</p>
-          <p class="hotel-card-price">От 5000 ₽</p>
-          <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-          <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-          <img class="hotel-card-rating" src="#" alt="">
-          <a class="hotel-card-button button" href="#">РЕЙТИНГ: 9,2</a>
-        </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="#" alt="" />
+              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="hotel-card-type">Гостиница</p>
+            <p class="hotel-card-price">От 5000 ₽</p>
+            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
+            <img class="hotel-card-rating" src="#" alt="" />
+            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 9,2</a>
+          </li>
 
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
-          </a>
-          <p class="hotel-card-type">Гостиница</p>
-          <p class="hotel-card-price">От 2500 ₽</p>
-          <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-          <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-          <img class="hotel-card-rating" src="#" alt="">
-          <a class="hotel-card-button button" href="#">РЕЙТИНГ: 6,9</a>
-        </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="#" alt="" />
+              <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            </a>
+            <p class="hotel-card-type">Гостиница</p>
+            <p class="hotel-card-price">От 2500 ₽</p>
+            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
+            <img class="hotel-card-rating" src="#" alt="" />
+            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 6,9</a>
+          </li>
 
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
-          </a>
-          <p class="hotel-card-type">Гостиница</p>
-          <p class="hotel-card-price">От 1500 ₽</p>
-          <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-          <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-          <img class="hotel-card-rating" src="#" alt="">
-          <a class="hotel-card-button button" href="#">РЕЙТИНГ: 5,0</a>
-        </li>
-      </ul>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="#" alt="" />
+              <h3 class="hotel-card-title">GreenTree Inn</h3>
+            </a>
+            <p class="hotel-card-type">Гостиница</p>
+            <p class="hotel-card-price">От 1500 ₽</p>
+            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
+            <img class="hotel-card-rating" src="#" alt="" />
+            <a class="hotel-card-button button" href="#">РЕЙТИНГ: 5,0</a>
+          </li>
+        </ul>
 
-      <ul class="pagination">
+        <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
               <span class="visually-hidden">Предыдущая страница</span>
@@ -241,13 +241,10 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-
         </ul>
-
-
       </main>
 
-      <section class="sub">
+      <section class="sub" data-test="subscribe">
         <h2 class="sub-title">Подпишитесь на рассылку</h2>
         <p class="sub-item">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -267,7 +264,7 @@
         </form>
       </section>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="footer-list">
           <li class="footer-item">
             <a class="footer-link" href="#">
