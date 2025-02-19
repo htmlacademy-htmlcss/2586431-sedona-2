@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="basic-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -162,13 +163,15 @@
                 </div>
               </fieldset>
 
-              <button class="button-current" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <div class="control-buttons">
+                <button class="button-current" type="submit">Применить</button>
+                <button class="button" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </header>
 
-        <section>
+        <section class="search">
           <p>НАЙДЕНО ГОСТИНИЦ: 38</p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -208,7 +211,7 @@
           </a>
         </section>
 
-        <ul class="hotel-catalog" data-test="catalog">
+        <ul class="hotel-catalog">
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
               <img
@@ -222,9 +225,9 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 4000 ₽</p>
-            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-            <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
-            <p class="hotel-card-button button">РЕЙТИНГ: 8,5</p>
+            <a class="hotel-card-button-1" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button-2" href="#">В ИЗБРАННОЕ</a>
+            <p class="hotel-card-button-3">РЕЙТИНГ: 8,5</p>
           </li>
 
           <li class="hotel-card">
@@ -240,9 +243,9 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 5000 ₽</p>
-            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-            <a class="hotel-card-button button" href="#">В ИЗБРАННОМ</a>
-            <p class="hotel-card-button button">РЕЙТИНГ: 9,2</p>
+            <a class="hotel-card-button-1" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button-2" href="#">В ИЗБРАННОМ</a>
+            <p class="hotel-card-button-3">РЕЙТИНГ: 9,2</p>
           </li>
 
           <li class="hotel-card">
@@ -259,9 +262,9 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 2500 ₽</p>
-            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-            <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
-            <p class="hotel-card-button button">РЕЙТИНГ: 6,9</p>
+            <a class="hotel-card-button-1" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button-2" href="#">В ИЗБРАННОЕ</a>
+            <p class="hotel-card-button-3">РЕЙТИНГ: 6,9</p>
           </li>
 
           <li class="hotel-card">
@@ -278,9 +281,9 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 1500 ₽</p>
-            <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
-            <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
-            <p class="hotel-card-button button">РЕЙТИНГ: 5,0</p>
+            <a class="hotel-card-button-1" href="#">ПОДРОБНЕЕ</a>
+            <a class="hotel-card-button-2" href="#">В ИЗБРАННОЕ</a>
+            <p class="hotel-card-button-3">РЕЙТИНГ: 5,0</p>
           </li>
         </ul>
 

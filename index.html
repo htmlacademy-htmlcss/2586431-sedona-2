@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header" data-test="header">
+    <header class="basic-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item"><a class="navigation-link" href="index.html">
@@ -24,20 +25,20 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <button class="navigation-link" type="button">
-              <span class="visually hidden">Поиск</span>
+              <span class="visually-hidden">Поиск</span>
               <img class="navigation-icon" src="#"  alt=" ">
             </button>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually hidden">В избранном:</span>
-              <span class="visually hidden">12 гостиниц</span>
+              <span class="visually-hidden">В избранном:</span>
+              <span class="visually-hidden">12 гостиниц</span>
               <img class="navigation-logo" src="#"  alt=" ">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually hidden">Хочу сюда!</span>>
+            <a class="navigation-link-1" href="#">
+              <span>Хочу сюда!</span>
             </a>
           </li>
         </ul>
@@ -45,19 +46,22 @@
     </header>
 
 
-    <main class="main-index">
+    <main class="basic-main">
       <h1 class="visually-hidden">Город Седона и его гостиницы</h1>
-      <img class="foreword-text" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в прекрасную Седону.Потому что Гранд Каньон отстой">
-      <img class="foreword-pic" src="images/index-background.png" width="1200" height="485" alt="Горный пейзаж Седоны">
-
+      <div class="main-pic-words">
+         <span class="visually-hidden">Добро пожаловать в прекрасную Седону.Потому что Гранд Каньон отстой</span>
+        <div class="main-pic">
+          <span class="visually-hidden">Горный пейзаж Седоны</span>
+        </div>
+      </div>
       <div class="foreword">
         <h2 class="foreword-title">Седона — небольшой городок в Аризоне,
 заслуживающий большего!</h2>
           <p class="foreword-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
 
-      <section class="advantages" data-test="advantages">
-        <h2 class="visually hidden">Преимущества Седоны</h2>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
@@ -67,16 +71,17 @@
             <img class="advantages-pic" src="images/photo-1.jpg" width="800" height="385" alt="Седонские дома, утопающие в зелени">
           </li>
         </ul>
-
       </section>
-      <section class="more-advantages" data-test="advantages">
+
+
+      <section class="more-advantages">
         <ul class="more-advantages-list">
           <li class="more-advantages-item">
             <h3 class="more-advantages-title">Небольшая площадь</h3>
             <p class="more-advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="more-advantages-item">
-            <h3 class="more-advantages-title">Красивая дорога</h3>
+          <li class="more-advantages-paragraph">
+            <h3 class="more-advantages">Красивая дорога</h3>
             <p class="more-advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="more-advantages-item">
@@ -104,7 +109,7 @@
        </div>
 
       <section class="recommendation">
-        <h2 class="visually hidden">Рекомендации,что попробовать в Седоне</h2>
+        <h2 class="visually-hidden">Рекомендации,что попробовать в Седоне</h2>
         <ul class="more-advantages-list">
           <li class="recommendation-item">
             <img class="recommendation-item-pic" src="#" alt=" ">
@@ -112,7 +117,7 @@
             <p class="recommendation-description">Рекомендуем пожить в настоящем мотеле,
 всё как в кино!</p>
           </li>
-          <li class="recommendation-item">
+          <li class="recommendation-paragraph">
             <img class="recommendation-item-pic" src="#" alt=" ">
             <h3 class="recommendation-title">Еда</h3>
             <p class="recommendation-description">Всегда заказывайте топовый фирменный бургер,
@@ -129,13 +134,13 @@
 
       <section class="offer">
         <h2 class="offer-title">Заинтересовались?</h2>
-        <p class="offer-item">Укажите предполагаемые даты поездки,
+        <p class="offer-description">Укажите предполагаемые даты поездки,
 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="offer-link" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
     </main>
 
-     <section class="sub" data-test="subscribe">
+     <section class="sub sub-image">
       <img class="sub-pic" src="#" alt=" ">
         <h2 class="sub-title">Подпишитесь на рассылку</h2>
         <p class="sub-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
