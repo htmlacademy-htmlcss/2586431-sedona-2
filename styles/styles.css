@@ -39,6 +39,7 @@ body {
 
 
 .navigation-link-current {
+    font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
     text-transform: capitalize;
@@ -47,6 +48,7 @@ body {
 
 
 .navigation-link-about {
+    font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
     text-transform: capitalize;
@@ -55,6 +57,7 @@ body {
 
 
 .navigation-link-hotel {
+   font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
     text-transform: capitalize;
