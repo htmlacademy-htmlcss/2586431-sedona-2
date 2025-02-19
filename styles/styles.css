@@ -12,12 +12,80 @@ body {
     }
 
 
-.navigation-link {
+.button-sub {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.button-search {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 36px;
+   text-align: center;
+   color: #ffffff;
+   background-color: #756157;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+
+.navigation-link-current {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.navigation-link-about {
     color: #000000;
     background-color: #FFFFFF;
     text-transform: capitalize;
     text-decoration: none;
     }
+
+
+.navigation-link-hotel {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.navigation-link-search {
+    background: url(../images/header/search.svg);
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
+}
+
+
+.navigation-link {
+    background: url(../images/header/favorites.svg);
+    width: 100%;
+    height: 64px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%
+}
 
 
 .navigation-link-1 {
@@ -167,6 +235,44 @@ body {
 }
 
 
+.motel {
+    background: url(../images/advantage/advantage-icon.svg);
+    width: 100%;
+    height: 72px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
+}
+
+
+.food {
+    background: url(../images/advantage/advantage-icon-food.svg);
+      width: 100%;
+      height: 72px;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-position: 50% 50%;
+}
+
+
+.souvenirs {
+    background: url(../images/advantage/advantage-icon-present.svg);
+      width: 100%;
+      height: 72px;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-position: 50% 50%;
+}
+
 .offer-title {
     font-size: 30px;
     line-height: 36px;
@@ -202,6 +308,58 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-transform: none;
+}
+
+
+.vk {
+    background: url(../images/footer/social-vk.svg);
+    width: 100%;
+    height: 14px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
+}
+
+
+.tg {
+    background: url(../images/footer/social-telegram.svg);
+    width: 100%;
+    height: 14px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
+}
+
+
+.yt {
+    background: url(../images/footer/social-youtube.svg);
+    width: 100%;
+    height: 14px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
+}
+
+
+.html.academy {
+    background: url(../images/footer/logo-htmlacademy.svg);
+    width: 100%;
+    height: 14px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 50%;
 }
 
 
@@ -303,7 +461,7 @@ body {
      font-size: 16px;
      line-height: 20px;
      color: #FFFFFF;
-    text-decoration: none;
+     text-decoration: none;
 }
 
 
@@ -318,12 +476,14 @@ body {
 
 .hotel-card-button-3 {
      background-color: #F2F2F2;
-     color: #333333;
      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-decoration: none;
+     font-size: 16px;
+     line-height: 20px;
+     color: #333333;
+     width: 140px;
+     height: 37px;
 }
+
 
  .visually-hidden {
    display: none;
