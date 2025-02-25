@@ -10,7 +10,7 @@
     <header class="basic-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item logo">
             <a class="navigation-link" href="index.html">
               <img
                 class="navigation-logo"
@@ -21,24 +21,24 @@
              >
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link-current" href="index.html">Главная</a>
+          <li class="navigation-item current">
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-about" href="#">О Cедоне</a>
+            <a class="navigation-link" href="#">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-hotel" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-              <a class="navigation-link-search" href="#">
+              <a class="navigation-link-icon icon-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
           </li>
           <li class="navigation-item">
-              <a class="navigation-link-icon" href="#">
+              <a class="navigation-link-icon icon-favorites" href="#">
                 <span class="visually-hidden">В избранном гостиниц:</span>
                 <span class="navigation-link-sign">12</span>
               </a>
@@ -53,7 +53,7 @@
     </header>
 
 
-    <main>
+    <main class="main-container">
       <section class="hero">
         <h1 class="visually-hidden">Город Седона и его гостиницы</h1>
         <img class="hero-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
@@ -133,21 +133,18 @@
         <h2 class="visually-hidden">Рекомендации,что попробовать в Седоне</h2>
         <ul class="more-advantages-list">
           <li class="recommendation-item">
-            <div class="motel"></div>
               <h3 class="recommendation-title">Жильё</h3>
               <p class="recommendation-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
           </li>
           <li class="recommendation-paragraph">
-           <div class="food"></div>
               <h3 class="recommendation-title">Еда</h3>
               <p class="recommendation-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
           </li>
           <li class="recommendation-item">
-            <div class="souvenirs"></div>
               <h3 class="recommendation-title">Сувениры</h3>
               <p class="recommendation-description">
               Не только китайского, но и настоящего местного производства!
@@ -183,6 +180,7 @@
           id="sub-mail"
           name="sub-mail"
           placeholder="Ваш e-mail"
+          class="sub-email-input"
        >
         <button class="button-sub" type="submit">Подписаться</button>
       </form>
@@ -209,7 +207,7 @@
       </ul>
 
       <div class="footer-unit">
-        <p class="page-footer-unit">+7 (812) 812-12-12</p>
+        <a class="page-footer-unit" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
         <div class="html.academy">
           <p class="page-footer-item">
