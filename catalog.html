@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
   </head>
@@ -32,31 +33,28 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <div class="navigation-link-search">
-              <button class="button" type="button">
+              <a class="navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
-              </button>
-            </div>
-          </li>
-          <li class="navigation-item">
-            <div class="navigation-link">
-              <a href="#">
-                <span class="visually-hidden">В избранном:</span>
-                <span class="visually-hidden">12 гостиниц</span>
               </a>
-            </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-1" href="#">
+              <a class="navigation-link-icon" href="#">
+                <span class="visually-hidden">В избранном гостиниц:</span>
+                <span class="navigation-link-sign">12</span>
+              </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-choice" href="#">
               <span>Хочу сюда!</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
+
+
     <main class="main-inner">
       <header class="inner-header">
-        <img class="inner-header-pic" src="#" alt="Размытый горный пейзаж">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -169,7 +167,7 @@
 
             <div class="control-buttons">
               <button class="button-current" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -185,33 +183,12 @@
         </select>
 
         <a href="#" class="button button-light">
-          <img
-            class="button-icon"
-            src="images/sorting-button/view-1.svg"
-            width="48"
-            height="48"
-            alt="Значок"
-         >
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
-          <img
-            class="button-icon"
-            src="images/sorting-button/view-2.svg"
-            width="48"
-            height="48"
-            alt="Значок"
-         >
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
         <a class="button" href="#">
-          <img
-            class="button-icon"
-            src="images/sorting-button/view-3.svg"
-            width="48"
-            height="48"
-            alt="Значок"
-         >
           <span class="visually-hidden">Показать список</span>
         </a>
       </section>
@@ -249,7 +226,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
           <a class="hotel-card-button-1" href="#">ПОДРОБНЕЕ</a>
-          <a class="hotel-card-button-2" href="#">В ИЗБРАННОМ</a>
+          <a class="hotel-card-button-favor" href="#">В ИЗБРАННОМ</a>
           <p class="hotel-card-button-3">РЕЙТИНГ: 9,2</p>
         </li>
 
@@ -344,29 +321,23 @@
       </form>
     </section>
 
-    <footer class="page-footer" data-test="footer">
+        <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <div class="vk">
-            <a class="footer-link" href="#">
+      <ul class="socials-list">
+        <li class="socials-item-vk">
+            <a class="socials-link" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
-          </div>
         </li>
-        <li class="footer-item">
-          <div class="tg">
-            <a class="footer-link" href="#">
+        <li class="socials-item-tg">
+            <a class="socials-link" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
-          </div>
         </li>
-        <li class="footer-item">
-          <div class="yt">
-            <a class="footer-link" href="#">
+        <li class="socials-item-yt">
+            <a class="socials-link" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
-          </div>
         </li>
       </ul>
 
