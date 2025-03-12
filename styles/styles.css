@@ -50,6 +50,8 @@ ul {
   background-color: #a6d7f8;
   text-decoration: none;
   text-transform: uppercase;
+  min-width: 230px;
+  min-height: 50px;
 }
 
 .navigation {
@@ -63,6 +65,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -76,6 +79,9 @@ ul {
 
 .navigation-item.logo {
   padding: 0 30px 0 0;
+  width: 140px;
+  height: 65px;
+  position: relative;
 }
 
 .navigation-user {
@@ -175,6 +181,7 @@ ul {
 .foreword-title {
   font-size: 30px;
   line-height: 36px;
+  margin: 70px 290px 0 290px;
 }
 
 .foreword-item {
@@ -183,6 +190,7 @@ ul {
   line-height: 26px;
   color: #333333;
   text-transform: none;
+  margin: 25px 270px 70px 270px;
 }
 
 .advantages-list {
@@ -242,12 +250,24 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 
 .addition-title {
   font-size: 30px;
   line-height: 36px;
+  margin: 0 350px 20px 350px;
+}
+
+.addition-item {
+  margin: 0 355px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: initial;
 }
 
 
@@ -293,12 +313,15 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 95px 305px;
 }
 
 
 .offer-title {
   font-size: 30px;
   line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .offer-search {
@@ -306,6 +329,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  margin-top: 55px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
@@ -319,6 +343,7 @@ ul {
   line-height: 26px;
   color: #333333;
   text-transform: none;
+  margin: 0;
 }
 
 
@@ -340,6 +365,7 @@ ul {
 .sub-title {
   font-size: 30px;
   line-height: 36px;
+  margin: 95px 260px 20px;
 }
 
 .sub-item {
@@ -347,18 +373,30 @@ ul {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
+  margin: 0 360px;
 }
 
 .sub-email-input {
   font-family: inherit;
-  width: 140px;
-  height: 21px;
+  min-width: 450px;
+  min-height: 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+
+.sub-field {
+ margin: 55px 260px 104px;
+ display: flex;
+  }
+
+
+.page-footer .page-unit {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
 
 .page-footer {
    display: flex;
@@ -576,8 +614,14 @@ ul {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-  color: inherit;
+
+  .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
