@@ -614,18 +614,20 @@ fieldset {
 }
 
 .search {
+  display: flex;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase ;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 45px;
 }
 
 .search-control {
+  display: flex;
   margin: 0;
-  margin-right: 100px;
+  margin-right: auto;
 }
 
 .select-control {
@@ -645,16 +647,17 @@ fieldset {
   display: grid;
   gap: 20px;
   grid-template-columns: 340px 340px 340px;
+  margin-bottom: 40px;
 }
 
 
 .hotel-card {
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 10px;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 2px #e5e5e5;
+  box-shadow: inset 0 0 0 1px #e5e5e5;
   padding: 20px;
 }
 
@@ -666,14 +669,18 @@ fieldset {
   text-transform: none;
   text-decoration: none;
   margin: 0;
-  margin-top: 15px;
 }
 
 .hotel-card-link {
   text-decoration: none;
-  grid-column: 1/3 ;
+  grid-column: 1/-1 ;
 }
 
+
+.hotel-card-image {
+  text-decoration: none;
+  grid-column: 1/-1;
+}
 
 .hotel-card-type {
   font-weight: 400;
@@ -696,7 +703,7 @@ fieldset {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 8px 18px;
   align-self: center;
   margin: 0;
 }
