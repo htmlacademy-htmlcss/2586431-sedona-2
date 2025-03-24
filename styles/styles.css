@@ -514,12 +514,12 @@ line-height: 20px;
   align-items: center;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link  {
   font-size: 16px;
   line-height: 21px;
 }
 
-.breadcrumbs-home {
+.breadcrumbs-home  {
   background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -528,6 +528,21 @@ line-height: 20px;
   display: flex;
 }
 
+.breadcrumbs-item {
+  display: flex;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 6px;
+  height: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
 
 .hotel-filter-inner {
   display: flex;
