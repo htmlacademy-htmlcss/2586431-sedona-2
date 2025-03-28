@@ -223,9 +223,13 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <div class="callout-content">
-            <a class="btn btn-brown offer-search" href="#">
+            <button
+              class="btn btn-brown offer-search"
+              type="button"
+              onclick="setHotelSearchModal(true)"
+            >
               Поиск гостиниц в Седоне
-            </a>
+            </button>
           </div>
         </section>
       </main>
@@ -290,6 +294,162 @@
           <span class="visually-hidden">html-academy</span>
         </a>
       </footer>
+      <div
+        class="modal-container modal-container-closed"
+        id="hotel-search-modal"
+      >
+        <div class="modal modal-search">
+          <button
+            class="modal-close-button"
+            type="button"
+            onclick="setHotelSearchModal(false)"
+          >
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form action="#">
+              <div class="form-field">
+                <div class="field-label">
+                  <label for="check-in-date">Дата заезда</label>
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    class="date-input"
+                    name="check-in-date"
+                    id="check-in-date"
+                    placeholder="Выберите дату"
+                    value="27 апреля 2020"
+                 >
+                  <span class="label label-error">
+                    Мы не можем отправить вас в прошлое
+                  </span>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <label for="check-out-date">Дата выезда</label>
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    class="date-input"
+                    name="check-out-date"
+                    id="check-out-date"
+                    placeholder="Выберите дату"
+                    value="1 сентября 2023"
+                 >
+                  <span class="label">
+                    На эти даты есть свободные номера. Пока есть.
+                  </span>
+                </div>
+              </div>
+              <div class="fields-row">
+                <div class="form-field">
+                  <div class="field-label">
+                    <label for="adults-count">Взрослые</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <div class="count-input-wrapper">
+                      <button
+                        class="count-input-step-btn icon-minus"
+                        type="button"
+                      >
+                        <span class="visually-hidden">
+                          Уменьшить кол-во взрослых
+                        </span>
+                      </button>
+                      <input
+                        class="count-input"
+                        name="adults-count"
+                        id="adults-count"
+                        value="2"
+                        type="number"
+                     >
+                      <button
+                        class="count-input-step-btn icon-plus"
+                        type="button"
+                      >
+                        <span class="visually-hidden">
+                          Увеличить кол-во взрослых
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <div class="field-label">
+                    <label for="children-count">Дети</label>
+                    <span class="tooltip icon-info">
+                      <span class="tooltip-content" role="tooltip">
+                        Укажите количество детей, которые будут с вами, возраст
+                        которых от 6 до 18 лет. Дети до 6 лет размещаются
+                        бесплатно.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="input-wrapper">
+                    <div class="count-input-wrapper">
+                      <button
+                        class="count-input-step-btn icon-minus"
+                        type="button"
+                      >
+                        <span class="visually-hidden">
+                          Уменьшить кол-во детей
+                        </span>
+                      </button>
+                      <input
+                        class="count-input"
+                        name="children-count"
+                        id="children-count"
+                        value="2"
+                        type="number"
+                     >
+                      <button
+                        class="count-input-step-btn icon-plus"
+                        type="button"
+                      >
+                        <span class="visually-hidden">
+                          Увеличить кол-во детей
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn btn-blue btn-wide subscribe-button"
+                type="submit"
+              >
+                Подписаться
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
+    <script>
+      const hotelSearchModalContainer =
+        document.getElementById("hotel-search-modal");
+      const closedClass = "modal-container-closed";
+      function setHotelSearchModal(open) {
+        if (open) {
+          hotelSearchModalContainer.classList.remove(closedClass);
+        } else {
+          hotelSearchModalContainer.classList.add(closedClass);
+        }
+      }
+      hotelSearchModalContainer.addEventListener("click", (ev) => {
+        if (ev.target === hotelSearchModalContainer) setHotelSearchModal(false);
+      });
+
+      document.addEventListener("keydown", (ev) => {
+        if (
+          ev.key === "Escape" &&
+          !hotelSearchModalContainer.classList.contains(closedClass)
+        ) {
+          setHotelSearchModal(false);
+        }
+      });
+    </script>
   </body>
 </html>
