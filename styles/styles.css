@@ -1304,3 +1304,39 @@ fieldset {
   visibility: visible;
   opacity: 1;
 }
+
+.double-slider {
+  margin-top: 48px;
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  --min: 0%;
+  --max: 70%;
+}
+
+.double-slider-control {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -8px;
+  cursor: pointer;
+  border: none;
+}
+
+.double-slider-control:first-of-type {
+  left: var(--min);
+}
+
+.double-slider-control:last-of-type {
+  left: var(--max);
+}
+
+.double-slider-bar {
+  height: 100%;
+  margin-left: var(--min);
+  width: calc(var(--max) - var(--min));
+  background-color: #ffffff;
+}

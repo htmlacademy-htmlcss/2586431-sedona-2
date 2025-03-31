@@ -207,14 +207,16 @@
                     <label class="visually-hidden" for="price-range">
                       Выберите цену:
                     </label>
-                    <input
-                      type="range"
-                      id="price-range"
-                      name="price"
-                      min="0"
-                      max="9000"
-                      value="4500"
-                   >
+                    <div class="double-slider">
+                      <div class="double-slider-bar">
+                        <button class="double-slider-control" id="price-min" type="button">
+                          <span class="visually-hidden">Стоимость, минимум</span>
+                        </button>
+                        <button class="double-slider-control" id="price-max" type="button">
+                          <span class="visually-hidden">Стоимость, максимум</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </fieldset>
 
