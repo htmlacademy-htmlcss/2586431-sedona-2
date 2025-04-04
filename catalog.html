@@ -17,10 +17,12 @@
       href="fonts/ptsans-700.woff2"
    >
     <title>Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
-      <header class="basic-header">
+      <header class="basic-header" data-test="header">
         <nav class="navigation">
           <a class="logo" href="index.html">
             <img
@@ -56,15 +58,15 @@
                 <span class="favorites-count">12</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-btn">
               <a class="btn btn-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-inner main-container">
-        <header class="inner-header">
+      <main class="main-inner main-container" data-test="main">
+        <header class="inner-header" data-test="filter">
           <div class="inner-title">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
@@ -236,28 +238,28 @@
           </form>
         </header>
 
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <div class="search">
             <h2><span class="visually-hidden">Поиск гостиниц</span></h2>
             <p class="search-control">Найдено гостиниц: 38</p>
             <select class="select-control" name="sort" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
+              <option value="cheap">Сначала дешевые</option>
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="view-list">
               <li class="view-paragraph">
-                <a class="view-item view-current view-img-1" href="#">
-                  <span class="visually-hidden">Показать карточки</span>
+                <a class="view-item view-current view-img-1" href="catalog.html?view=tile">
+                  <span class="visually-hidden">Показать плиты</span>
                 </a>
               </li>
               <li class="view-paragraph">
-                <a class="view-item view-img-2" href="#">
-                  <span class="visually-hidden">Показать слайдшоу</span>
+                <a class="view-item view-img-2" href="catalog.html?view=card">
+                  <span class="visually-hidden">Показать карточку</span>
                 </a>
               </li>
               <li class="view-paragraph">
-                <a class="view-item view-img-3" href="#">
+                <a class="view-item view-img-3" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -284,7 +286,7 @@
               <p class="stars stars-4">
                 <span class="visually-hidden">Класс отеля: 4 звезды</span>
               </p>
-              <p class="btn btn-gray card-button">Рейтинг: 8,5</p>
+              <p class="btn btn-gray card-button" tabindex="-1">Рейтинг: 8,5</p>
             </li>
 
             <li class="hotel-card">
@@ -306,7 +308,7 @@
               <p class="stars stars-4">
                 <span class="visually-hidden">Класс отеля: 4 звезды</span>
               </p>
-              <p class="btn btn-gray card-button">Рейтинг: 9,2</p>
+              <p class="btn btn-gray card-button" tabindex="-1">Рейтинг: 9,2</p>
             </li>
 
             <li class="hotel-card">
@@ -329,7 +331,7 @@
               <p class="stars stars-3">
                 <span class="visually-hidden">Класс отеля: 3 звезды</span>
               </p>
-              <p class="btn btn-gray card-button">Рейтинг: 6,9</p>
+              <p class="btn btn-gray card-button" tabindex="-1">Рейтинг: 6,9</p>
             </li>
 
             <li class="hotel-card">
@@ -352,7 +354,7 @@
               <p class="stars stars-2">
                 <span class="visually-hidden">Класс отеля: 2 звезды</span>
               </p>
-              <p class="btn btn-gray card-button">Рейтинг: 5,0</p>
+              <p class="btn btn-gray card-button" tabindex="-1">Рейтинг: 5,0</p>
             </li>
           </ul>
 
@@ -377,12 +379,14 @@
             </li>
           </ul>
         </section>
-      </main>
 
-      <section class="inner-description callout subscribe">
+
+      <section class="inner-description callout subscribe" data-test="subscribe">
         <h2 class="callout-title">Подпишитесь на рассылку</h2>
         <p class="inner-callout">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,
+          <br>
+           честное бойскаутское!
         </p>
 
         <div class="subscribe-title callout-content">
@@ -405,8 +409,10 @@
           </form>
         </div>
       </section>
+    </main>
 
-      <footer class="page-footer">
+
+      <footer class="page-footer" data-test="footer">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="socials-list">
           <li class="socials-item-vk item">

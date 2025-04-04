@@ -16,11 +16,13 @@
       as="font"
       href="fonts/ptsans-700.woff2"
    >
-    <title>Седона</title>
+    <title>HTML Academy: Седона</title>
+     <link rel="icon" href="favicon.ico">
+     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
-      <header class="basic-header">
+      <header class="basic-header" data-test="header">
         <nav class="navigation">
           <a class="logo" href="index.html">
             <img
@@ -54,15 +56,15 @@
                 <span class="favorites-count">12</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-btn">
               <a class="btn btn-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-container">
-        <section class="hero">
+      <main class="main-container" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Город Седона и его гостиницы</h1>
           <img
             class="hero-image"
@@ -73,17 +75,21 @@
          >
         </section>
 
-        <section class="callout">
-          <h2 class="callout-title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
-          <p class="callout-description">
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-          </p>
-        </section>
 
-        <section class="advantages">
+
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
+
+           <section class="callout callout-look-benefits">
+           <h2 class="callout-title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+           </h2>
+           <p class="callout-description">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+           </p>
+           </section>
+
+
           <ul class="advantages-list">
             <li
               class="advantages-item advantages-item-wide advantages-item-blue"
@@ -104,7 +110,7 @@
             </li>
 
             <li class="advantages-item advantages-item-flex">
-              <div class="advantages-card">
+              <div class="advantages-card row-cards">
                 <h3 class="advantages-title">
                   Небольшая
                   <br>
@@ -116,7 +122,7 @@
               </div>
             </li>
             <li class="advantages-item advantages-item-flex">
-              <div class="advantages-card advantages-card-alt">
+              <div class="advantages-card advantages-card-alt row-cards">
                 <h3 class="advantages-title">
                   Красивая
                   <br>
@@ -128,7 +134,7 @@
               </div>
             </li>
             <li class="advantages-item advantages-item-flex">
-              <div class="advantages-card">
+              <div class="advantages-card row-cards">
                 <h3 class="advantages-title">
                   Мало
                   <br>
@@ -164,7 +170,10 @@
           </ul>
         </section>
 
-        <div class="callout">
+
+        <section class="recommendation" data-test="service">
+
+           <div class="callout callout-invite">
           <h2 class="callout-title">
             Приезжайте в Седону отдохнуть
             <br>
@@ -173,25 +182,26 @@
           <p class="callout-description">
             Опытный персонал и качественное обслуживание!
           </p>
-        </div>
+          </div>
 
-        <section class="recommendation">
           <h2 class="visually-hidden">Рекомендации,что попробовать в Седоне</h2>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-flex motel">
               <div
-                class="advantages-card advantages-card-alt advantages-card-clean"
+                class="advantages-card advantages-card-alt advantages-card-clean card-icon"
               >
                 <h3 class="advantages-title title">Жильё</h3>
                 <p class="advantages-description">
                   Рекомендуем пожить
                   <br>
-                  в настоящем мотеле, всё как в кино!
+                  в настоящем мотеле,
+                  <br>
+                  всё как в кино!
                 </p>
               </div>
             </li>
             <li class="advantages-item advantages-item-flex food">
-              <div class="advantages-card advantages-card-clean">
+              <div class="advantages-card advantages-card-clean card-icon">
                 <h3 class="advantages-title title">Еда</h3>
                 <p class="advantages-description">
                   Всегда заказывайте
@@ -202,7 +212,7 @@
             </li>
             <li class="advantages-item advantages-item-flex souvenirs">
               <div
-                class="advantages-card advantages-card-alt advantages-card-clean"
+                class="advantages-card advantages-card-alt advantages-card-clean card-icon"
               >
                 <h3 class="advantages-title title">Сувениры</h3>
                 <p class="advantages-description">
@@ -215,7 +225,7 @@
           </ul>
         </section>
 
-        <section class="callout">
+        <section class="callout callout-search" data-test="search">
           <h2 class="callout-title">Заинтересовались?</h2>
           <p class="callout-description">
             Укажите предполагаемые даты поездки,
@@ -228,16 +238,18 @@
               type="button"
               onclick="setHotelSearchModal(true)"
             >
-              Поиск гостиниц в Седоне
+              Поиск гостиницы в Седоне
             </button>
           </div>
         </section>
-      </main>
 
-      <section class="callout subscribe subscribe-image">
+
+      <section class="callout subscribe subscribe-image" data-test="subscribe">
         <h2 class="callout-title">Подпишитесь на рассылку</h2>
         <p class="callout-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,
+          <br>
+           честное бойскаутское!
         </p>
 
         <div class="callout-content">
@@ -260,8 +272,9 @@
           </form>
         </div>
       </section>
+  </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="socials-list">
           <li class="socials-item-vk">
@@ -297,12 +310,14 @@
       <div
         class="modal-container modal-container-closed"
         id="hotel-search-modal"
+        data-test="modal"
       >
         <div class="modal modal-search">
           <button
             class="modal-close-button"
             type="button"
             onclick="setHotelSearchModal(false)"
+            tabindex="-1"
           >
             <span class="visually-hidden">Закрыть</span>
           </button>
@@ -318,7 +333,7 @@
                     class="date-input"
                     name="check-in-date"
                     id="check-in-date"
-                    placeholder="Выберите дату"
+                    placeholder="Укажите дату"
                     value="27 апреля 2020"
                  >
                   <span class="label label-error">
@@ -377,9 +392,9 @@
                   </div>
                 </div>
                 <div class="form-field">
-                  <div class="field-label">
+                  <div class="field-label field-label-short">
                     <label for="children-count">Дети</label>
-                    <span class="tooltip icon-info">
+                    <span class="tooltip icon-info" tabindex="0">
                       <span class="tooltip-content" role="tooltip">
                         Укажите количество детей, которые будут с вами, возраст
                         которых от 6 до 18 лет. Дети до 6 лет размещаются
@@ -417,10 +432,10 @@
                 </div>
               </div>
               <button
-                class="btn btn-blue btn-wide subscribe-button"
+                class="btn btn-blue btn-wide btn-large btn-round"
                 type="submit"
               >
-                Подписаться
+                Найти
               </button>
             </form>
           </section>
