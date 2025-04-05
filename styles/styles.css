@@ -95,6 +95,7 @@ input[type="number"] {
   color: #ffffff;
   background-color: transparent;
   margin-top: 30px;
+  border: none;
 }
 
 .btn:hover {
@@ -102,8 +103,10 @@ input[type="number"] {
 }
 
 .btn-transparent:hover {
-  background-color: #ffffff33;
+  color: #ffffff33;
+   border: none;
 }
+
 
 .btn:active {
   filter: brightness(0.9);
@@ -821,6 +824,12 @@ fieldset {
   flex-shrink: 0;
 }
 
+.control-input:disabled {
+    opacity: 0.4;
+    background-color: #f2f2f2;
+    pointer-events: none;
+}
+
 .control {
   cursor: pointer;
   transition: filter 0.2s ease, background-color 0.2s ease;
@@ -1439,6 +1448,16 @@ fieldset {
 
 .double-slider-control:last-of-type {
   left: var(--max);
+}
+
+.double-slider-control:focus {
+  border-radius: 4px;
+  border: 3px solid #82b3d3;
+}
+
+.double-slider-control:hover {
+  border-radius: 4px;
+  border: 2px solid #82b3d3;
 }
 
 .double-slider-bar {

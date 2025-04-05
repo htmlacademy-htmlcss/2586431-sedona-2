@@ -16,7 +16,7 @@
       as="font"
       href="fonts/ptsans-700.woff2"
    >
-    <title>Седона</title>
+    <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
@@ -66,7 +66,7 @@
       </header>
 
       <main class="main-inner main-container" data-test="main">
-        <header class="inner-header" data-test="filter">
+        <header class="inner-header">
           <div class="inner-title">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
@@ -82,7 +82,7 @@
             </ul>
           </div>
 
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <div class="hotel-filter-inner">
               <section class="hotel-filter-section">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -206,9 +206,7 @@
                     </span>
                   </div>
                   <div class="price-range">
-                    <label class="visually-hidden" for="price-range">
-                      Выберите цену:
-                    </label>
+
                     <div class="double-slider">
                       <div class="double-slider-bar">
                         <button class="double-slider-control" id="price-min" type="button">
@@ -402,6 +400,7 @@
               id="subscribe-mail"
               name="subscribe-mail"
               placeholder="Ваш e-mail"
+              required
            >
             <button class="btn btn-blue subscribe-button" type="submit">
               Подписаться
