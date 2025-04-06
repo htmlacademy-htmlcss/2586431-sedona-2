@@ -17,8 +17,8 @@
       href="fonts/ptsans-700.woff2"
    >
     <title>HTML Academy: Седона</title>
-     <link rel="icon" href="favicon.ico">
-     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -75,20 +75,17 @@
          >
         </section>
 
-
-
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
 
-           <section class="callout callout-look-benefits">
-           <h2 class="callout-title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-           </h2>
-           <p class="callout-description">
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-           </p>
-           </section>
-
+          <div class="callout callout-look-benefits">
+            <h2 class="callout-title">
+              Седона — небольшой городок в Аризоне, заслуживающий большего!
+            </h2>
+            <p class="callout-description">
+              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+            </p>
+          </div>
 
           <ul class="advantages-list">
             <li
@@ -111,11 +108,7 @@
 
             <li class="advantages-item advantages-item-flex">
               <div class="advantages-card row-cards">
-                <h3 class="advantages-title">
-                  Небольшая
-                  <br>
-                  площадь
-                </h3>
+                <h3 class="advantages-title">Небольшая площадь</h3>
                 <p class="advantages-description">
                   Все достопримечательности находятся очень близко
                 </p>
@@ -170,18 +163,16 @@
           </ul>
         </section>
 
-
         <section class="recommendation" data-test="service">
-
-           <div class="callout callout-invite">
-          <h2 class="callout-title">
-            Приезжайте в Седону отдохнуть
-            <br>
-            в комфорте и уюте!
-          </h2>
-          <p class="callout-description">
-            Опытный персонал и качественное обслуживание!
-          </p>
+          <div class="callout callout-invite">
+            <h2 class="callout-title">
+              Приезжайте в Седону отдохнуть
+              <br>
+              в комфорте и уюте!
+            </h2>
+            <p class="callout-description">
+              Опытный персонал и качественное обслуживание!
+            </p>
           </div>
 
           <h2 class="visually-hidden">Рекомендации,что попробовать в Седоне</h2>
@@ -243,37 +234,37 @@
           </div>
         </section>
 
+        <section
+          class="callout subscribe subscribe-image"
+          data-test="subscribe"
+        >
+          <h2 class="callout-title">Подпишитесь на рассылку</h2>
+          <p class="callout-description">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
 
-      <section class="callout subscribe subscribe-image" data-test="subscribe">
-        <h2 class="callout-title">Подпишитесь на рассылку</h2>
-        <p class="callout-description">
-          Только полезная информация и никакого спама,
-          <br>
-           честное бойскаутское!
-        </p>
-
-        <div class="callout-content">
-          <form
-            class="subscribe-field"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden" for="subscribe-mail">E-mail</label>
-            <input
-              class="subscribe-email-input"
-              type="text"
-              id="subscribe-mail"
-              name="subscribe-mail"
-              placeholder="Ваш e-mail"
-              required
-           >
-            <button class="btn btn-blue subscribe-button" type="submit">
-              Подписаться
-            </button>
-          </form>
-        </div>
-      </section>
-  </main>
+          <div class="callout-content">
+            <form
+              class="subscribe-field"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label class="visually-hidden" for="subscribe-mail">E-mail</label>
+              <input
+                class="subscribe-email-input"
+                type="text"
+                id="subscribe-mail"
+                name="subscribe-mail"
+                placeholder="Ваш e-mail"
+                required
+             >
+              <button class="btn btn-blue subscribe-button" type="submit">
+                Подписаться
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
 
       <footer class="page-footer" data-test="footer">
         <h2 class="visually-hidden">Контакты</h2>
@@ -318,7 +309,8 @@
             class="modal-close-button"
             type="button"
             onclick="setHotelSearchModal(false)"
-            tabindex="-1"
+            tabindex="0"
+            title="Закрыть"
           >
             <span class="visually-hidden">Закрыть</span>
           </button>
@@ -395,13 +387,13 @@
                 <div class="form-field">
                   <div class="field-label field-label-short">
                     <label for="children-count">Дети</label>
-                    <span class="tooltip icon-info" tabindex="0">
+                    <button class="tooltip icon-info" type="button">
                       <span class="tooltip-content" role="tooltip">
                         Укажите количество детей, которые будут с вами, возраст
                         которых от 6 до 18 лет. Дети до 6 лет размещаются
                         бесплатно.
                       </span>
-                    </span>
+                    </button>
                   </div>
                   <div class="input-wrapper">
                     <div class="count-input-wrapper">
@@ -435,6 +427,7 @@
               <button
                 class="btn btn-blue btn-wide btn-large btn-round"
                 type="submit"
+                id="hotel-search-modal-submit"
               >
                 Найти
               </button>
@@ -450,6 +443,7 @@
       function setHotelSearchModal(open) {
         if (open) {
           hotelSearchModalContainer.classList.remove(closedClass);
+          document.getElementById("hotel-search-modal-submit").focus();
         } else {
           hotelSearchModalContainer.classList.add(closedClass);
         }
