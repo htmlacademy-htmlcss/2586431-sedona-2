@@ -1,0 +1,15 @@
+{
+  "name": "2586431-sedona-2-master",
+  "version": "1.0.0",
+  "description": "- Студент: [Алевтина Додонова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2586431). - Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena). - Сайт: [Проект Седона](https://allenyonok.github.io/2586431-sedona-2/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.10.1",
+    "linthtml-config-htmlacademy": "^1.0.25"
+  }
+}

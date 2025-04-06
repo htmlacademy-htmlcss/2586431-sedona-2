@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Алевтина Додонова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2586431).
-* Наставник: `Неизвестно`.
+- Студент: [Алевтина Додонова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2586431).
+- Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+- Сайт: [Проект Седона](https://allenyonok.github.io/2586431-sedona-2/).
 
 ---
 
