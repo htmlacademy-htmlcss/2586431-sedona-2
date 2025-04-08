@@ -211,6 +211,7 @@ button:disabled {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-list {
@@ -218,13 +219,13 @@ button:disabled {
   padding: 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .navigation-item {
   padding: 0 16px;
 }
+
 
 .navigation-link::after {
   content: "";
@@ -233,7 +234,7 @@ button:disabled {
   bottom: -1px;
   width: 0;
   left: 50%;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 
 .navigation-link.current::after,
@@ -244,20 +245,19 @@ button:disabled {
   left: 0;
 }
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:active {
+  color: #7561574D;
+}
+
 .logo {
   margin-right: 30px;
   width: 140px;
   height: 65px;
   position: relative;
-}
-
-.navigation-list-user {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -268,10 +268,15 @@ button:disabled {
   width: 44px;
   display: flex;
   justify-content: center;
+padding-top: 12px;
 }
 
 .navigation-user-btn {
+  margin-block: 10px;
   margin-left: 20px;
+  min-width: 160px;
+  max-width: 320px;
+  align-content: center;
 }
 
 .navigation-link {
@@ -280,6 +285,7 @@ button:disabled {
   display: block;
   padding: 20px 0;
   position: relative;
+  transition: color 0.1s ease;
 }
 
 .icon-40::after {
@@ -398,6 +404,7 @@ button:disabled {
   width: 100%;
   text-align: center;
   padding: 102px 85px;
+  min-width: 230px;
 }
 
 .row-cards {
@@ -406,6 +413,10 @@ button:disabled {
 
 .advantages-card-alt {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-card-white {
+  background-color: #ffffff;
 }
 
 .advantages-item-blue {
@@ -657,11 +668,15 @@ button:disabled {
   text-transform: none;
   text-decoration: none;
   cursor: pointer;
-  transition: filter 0.2s ease, background-color 0.2s ease;
+  transition: filter 0.2s ease, color 0.2s ease;
 }
 
 .page-footer-unit:hover {
-  color: #00000080;
+  color: #756157;
+}
+
+.page-footer-unit:active {
+  color: #7561574d;
 }
 
 .developer-link {
@@ -684,7 +699,11 @@ button:disabled {
 }
 
 .developer-link:hover::after {
-  background-color: #00000080;
+  background-color: #756157;
+}
+
+.developer-link:active::after {
+  background-color: #7561574d;
 }
 
 .inner-header {
@@ -805,6 +824,10 @@ fieldset {
 
 .hotel-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.hotel-filter-item {
+  max-width: 200px;
 }
 
 .hotel-filter-controls {
@@ -1241,6 +1264,14 @@ fieldset {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+background-color: #00000020;
+}
+
+.modal-close-button:active {
+background-color: #00000010;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1358,11 +1389,11 @@ fieldset {
 
 .count-input-step-btn:hover,
 .count-input-step-btn:focus {
-  filter: brightness(0.97);
+  background-color: #00000020;
 }
 
 .count-input-step-btn:active {
-  filter: brightness(0.95);
+  background-color: #00000010;
 }
 
 .input-wrapper .count-input-step-btn:first-of-type {
